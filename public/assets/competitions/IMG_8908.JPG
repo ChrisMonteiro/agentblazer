@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <defs>
+    <linearGradient id="track2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04060E"/>
+      <stop offset="50%" stop-color="#0D0924"/>
+      <stop offset="100%" stop-color="#03040A"/>
+    </linearGradient>
+
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <pattern id="matrixCode" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#A855F7" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Environment -->
+  <rect width="1000" height="700" fill="url(#track2Bg)"/>
+  <rect width="1000" height="700" fill="url(#matrixCode)"/>
+
+  <!-- Top Ambient Banner -->
+  <g transform="translate(50, 45)">
+    <rect width="900" height="70" rx="14" fill="#0C0E24" stroke="#A855F7" stroke-width="1.5" stroke-opacity="0.5"/>
+    <text x="30" y="32" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#C084FC">
+      PROMPT OPS-2K26 // TRACK 2: PYTHON CODE DEBUGGING &amp; GEMINI AI SECURITY EXTRACTION
+    </text>
+    <text x="30" y="54" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">
+      Department of CSE • In-Session Evaluation Arena • Automated Test Harness
+    </text>
+    <rect x="740" y="16" width="135" height="36" rx="8" fill="#140D36" stroke="#C084FC"/>
+    <text x="807" y="39" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#FDE047">
+      ACTIVE SPRINT
+    </text>
+  </g>
+
+  <!-- Left Column: Code Debugging IDE Workspace -->
+  <g transform="translate(50, 140)">
+    <rect width="520" height="470" rx="14" fill="#070A18" stroke="#1E293B" stroke-width="2"/>
+    <!-- IDE Header Tabs -->
+    <rect width="520" height="38" rx="14" fill="#0D1228"/>
+    <rect x="15" y="8" width="130" height="24" rx="5" fill="#1E293B"/>
+    <text x="80" y="24" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8">debug_solver.py</text>
+    
+    <rect x="155" y="8" width="130" height="24" rx="5" fill="#0A0E20"/>
+    <text x="220" y="24" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748B">schema_rules.json</text>
+
+    <!-- Code Editor Content -->
+    <g transform="translate(20, 60)" font-family="'JetBrains Mono', monospace" font-size="12">
+      <text y="0" fill="#64748B">01  <tspan fill="#F43F5E">import</tspan> json, re, google.genai</text>
+      <text y="24" fill="#64748B">02  <tspan fill="#A855F7">def</tspan> <tspan fill="#38BDF8">validate_prompt_jailbreak</tspan>(payload: <tspan fill="#FDE047">dict</tspan>):</text>
+      <text y="48" fill="#64748B">03      <tspan fill="#64748B"># Challenge 3: Extract guarded security prompt token</tspan></text>
+      <text y="72" fill="#64748B">04      guard_pattern = re.compile(<tspan fill="#4ADE80">r"(?i)system_secret_key"</tspan>)</text>
+      <text y="96" fill="#64748B">05      <tspan fill="#F43F5E">if</tspan> guard_pattern.search(payload[<tspan fill="#4ADE80">"prompt"</tspan>]):</text>
+      <text y="120" fill="#64748B">06          <tspan fill="#F43F5E">return</tspan> <tspan fill="#38BDF8">sanitize_defense_pipeline</tspan>(payload)</text>
+      <text y="144" fill="#64748B">07      <tspan fill="#F43F5E">return</tspan> {<tspan fill="#4ADE80">"status"</tspan>: <tspan fill="#4ADE80">"FILTER_PASSED"</tspan>, <tspan fill="#4ADE80">"score"</tspan>: <tspan fill="#FDE047">100</tspan>}</text>
+      <text y="178" fill="#64748B">08  <tspan fill="#64748B"># Automated schema deserialization benchmark</tspan></text>
+      <text y="202" fill="#64748B">09  transformed_output = convert_schema_to_pydantic(raw_data)</text>
+      <text y="226" fill="#64748B">10  <tspan fill="#F43F5E">assert</tspan> transformed_output.is_valid() == <tspan fill="#FDE047">True</tspan></text>
+    </g>
+
+    <!-- Terminal Test Output Window -->
+    <rect x="15" y="325" width="490" height="130" rx="8" fill="#02040A" stroke="#00F0FF" stroke-opacity="0.3"/>
+    <rect x="15" y="325" width="490" height="24" rx="8" fill="#0A1124"/>
+    <text x="25" y="341" font-family="'JetBrains Mono', monospace" font-size="10" fill="#00F0FF">TERMINAL OUTPUT // AUTOMATED TEST RUNNER</text>
+    
+    <text x="25" y="370" font-family="'JetBrains Mono', monospace" font-size="11" fill="#4ADE80">✔ Test Case 1: JSON Normalization passed (14ms)</text>
+    <text x="25" y="392" font-family="'JetBrains Mono', monospace" font-size="11" fill="#4ADE80">✔ Test Case 2: Python Code Loop Debugged (0 errors)</text>
+    <text x="25" y="414" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FDE047">⚡ Test Case 3: Gemini Prompt Security Extraction [RESOLVED]</text>
+    <text x="25" y="436" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8">> Benchmark Verdict: 100/100 Points Awarded</text>
+  </g>
+
+  <!-- Right Column: Live Track 2 Leaderboard & Evaluators -->
+  <g transform="translate(600, 140)">
+    <!-- Track 2 Standings Card -->
+    <rect width="350" height="280" rx="14" fill="#080C1E" stroke="#A855F7" stroke-width="1.5" stroke-opacity="0.6"/>
+    <rect width="350" height="38" rx="14" fill="#130E2E"/>
+    <text x="20" y="24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#C084FC">TRACK 2 PODIUM RESULTS</text>
+
+    <!-- Rank 1 -->
+    <g transform="translate(20, 60)">
+      <rect width="310" height="56" rx="8" fill="#17123A" stroke="#FDE047" stroke-width="1"/>
+      <circle cx="28" cy="28" r="14" fill="#FDE047"/>
+      <text x="28" y="33" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#0F172A">1</text>
+      <text x="54" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">Harimurali KS</text>
+      <text x="54" y="44" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FDE047">Security Prompt Extraction • Rank 1</text>
+      <text x="295" y="34" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#4ADE80">100/100</text>
+    </g>
+
+    <!-- Rank 2 -->
+    <g transform="translate(20, 128)">
+      <rect width="310" height="56" rx="8" fill="#0F1630" stroke="#38BDF8" stroke-width="1"/>
+      <circle cx="28" cy="28" r="14" fill="#38BDF8"/>
+      <text x="28" y="33" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#0F172A">2</text>
+      <text x="54" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">Venus Suhani D’Lima</text>
+      <text x="54" y="44" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38BDF8">JSON Schema &amp; Debugging • Rank 2</text>
+      <text x="295" y="34" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#38BDF8">96/100</text>
+    </g>
+
+    <!-- Rank 3 -->
+    <g transform="translate(20, 196)">
+      <rect width="310" height="56" rx="8" fill="#0F1630" stroke="#94A3B8" stroke-width="1"/>
+      <circle cx="28" cy="28" r="14" fill="#94A3B8"/>
+      <text x="28" y="33" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#0F172A">3</text>
+      <text x="54" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">Venisha Snehal D’Souza</text>
+      <text x="54" y="44" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">Python Debugging • Rank 3</text>
+      <text x="295" y="34" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#CBD5E1">92/100</text>
+    </g>
+
+    <!-- Evaluation Criteria Card -->
+    <g transform="translate(0, 300)">
+      <rect width="350" height="170" rx="14" fill="#080C1E" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="20" y="30" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#38BDF8">PROGRAM OUTCOME EVALUATION</text>
+      <text x="20" y="60" font-family="'JetBrains Mono', monospace" font-size="11" fill="#CBD5E1">› PO4: Complex Problem Solving</text>
+      <text x="20" y="85" font-family="'JetBrains Mono', monospace" font-size="11" fill="#CBD5E1">› PO5: Modern Tool &amp; Model Usage</text>
+      <text x="20" y="110" font-family="'JetBrains Mono', monospace" font-size="11" fill="#CBD5E1">› PO8: Algorithmic &amp; Prompt Ethics</text>
+      <text x="20" y="135" font-family="'JetBrains Mono', monospace" font-size="11" fill="#CBD5E1">› PO11: Project &amp; Sprint Execution</text>
+    </g>
+  </g>
+
+  <!-- Bottom Tag Bar -->
+  <g transform="translate(50, 630)">
+    <rect width="450" height="36" rx="8" fill="#0B1026" stroke="#A855F7" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="20" y="23" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#C084FC">
+      CHALLENGE ARENA // TRACK 2: CODE DEBUG &amp; REVERSE PROMPTING
+    </text>
+  </g>
+</svg>

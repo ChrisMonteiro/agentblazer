@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix AgentBlazer Club",
+  "description": "Official Computer Science \u0026 Engineering club website for AgentBlazer, featuring hackathons, workshops, member directory, activities, and tech showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <defs>
+    <linearGradient id="labBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="50%" stop-color="#09132E"/>
+      <stop offset="100%" stop-color="#04060E"/>
+    </linearGradient>
+
+    <linearGradient id="monitorGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <filter id="screenBlur">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Environment (CSE Lab Arena) -->
+  <rect width="1000" height="700" fill="url(#labBg)"/>
+
+  <!-- Background Lab Ambient Grid -->
+  <g opacity="0.12">
+    <line x1="0" y1="200" x2="1000" y2="200" stroke="#00F0FF" stroke-width="1"/>
+    <line x1="0" y1="360" x2="1000" y2="360" stroke="#00F0FF" stroke-width="1"/>
+    <line x1="0" y1="520" x2="1000" y2="520" stroke="#00F0FF" stroke-width="1"/>
+    <line x1="250" y1="0" x2="250" y2="700" stroke="#00F0FF" stroke-width="1"/>
+    <line x1="500" y1="0" x2="500" y2="700" stroke="#00F0FF" stroke-width="1"/>
+    <line x1="750" y1="0" x2="750" y2="700" stroke="#00F0FF" stroke-width="1"/>
+  </g>
+
+  <!-- Large Lab Wall Projector Screen in the background -->
+  <rect x="220" y="45" width="560" height="230" rx="14" fill="#0A1226" stroke="#00F0FF" stroke-width="2" stroke-opacity="0.4"/>
+  <rect x="235" y="58" width="530" height="204" rx="8" fill="#030816"/>
+  
+  <!-- Projector Screen UI: Live Competition Leaderboard & Prompt Arena -->
+  <rect x="245" y="68" width="510" height="28" rx="6" fill="#0E2145"/>
+  <text x="260" y="87" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#00F0FF">PROMPT OPS-2K26 // TRACK 1: PROMPT ENGINEERING ROUND</text>
+  <text x="735" y="87" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FDE047">ROUND TIME: 45:00</text>
+
+  <!-- Prompt Task Showcase on Projector -->
+  <rect x="255" y="108" width="230" height="135" rx="8" fill="#061224" stroke="#1E293B" stroke-width="1"/>
+  <text x="270" y="130" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#38BDF8">TARGET VECTOR LOGO</text>
+  <circle cx="370" cy="180" r="38" fill="none" stroke="#00F0FF" stroke-width="2" stroke-dasharray="6 3"/>
+  <polygon points="370,152 395,195 345,195" fill="#38BDF8" fill-opacity="0.6"/>
+
+  <!-- Live Evaluation Scoreboard Column -->
+  <rect x="500" y="108" width="245" height="135" rx="8" fill="#061224" stroke="#1E293B" stroke-width="1"/>
+  <text x="515" y="128" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#94A3B8">LIVE BENCHMARK RANKS</text>
+  <text x="515" y="152" font-family="'JetBrains Mono', monospace" font-size="11" fill="#4ADE80">1. Chinmayee • 98.4% Fidelity</text>
+  <text x="515" y="174" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FDE047">2. Chris Royston Monteiro • 96.1%</text>
+  <text x="515" y="196" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8">3. Deeksha Ravi Moger • 94.8%</text>
+  <text x="515" y="218" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748B">Benchmarking structural alignment...</text>
+
+  <!-- Lab Workstation Desks & Computer Terminals -->
+  <rect x="40" y="440" width="920" height="220" rx="16" fill="#0A1122" stroke="#1E293B" stroke-width="2"/>
+
+  <!-- Workstation 1 (Left) -->
+  <g transform="translate(180, 420)">
+    <rect x="-100" y="-120" width="200" height="130" rx="8" fill="#070C1A" stroke="#00F0FF" stroke-width="2"/>
+    <rect x="-92" y="-112" width="184" height="114" rx="4" fill="#020611"/>
+    <!-- Terminal Code / Prompt Editor -->
+    <rect x="-85" y="-105" width="170" height="18" fill="#0B1A3A"/>
+    <text x="-80" y="-92" font-family="'JetBrains Mono', monospace" font-size="8" fill="#00F0FF">PROMPT_STUDIO v2.4</text>
+    <text x="-80" y="-72" font-family="'JetBrains Mono', monospace" font-size="8" fill="#E2E8F0">> "Generate futuristic geometric</text>
+    <text x="-80" y="-58" font-family="'JetBrains Mono', monospace" font-size="8" fill="#E2E8F0">   insignia, cyber typography..."</text>
+    <text x="-80" y="-40" font-family="'JetBrains Mono', monospace" font-size="8" fill="#4ADE80">Rendering preview: 100% OK</text>
+    <!-- Stand -->
+    <rect x="-15" y="10" width="30" height="25" fill="#1E293B"/>
+    <rect x="-40" y="30" width="80" height="8" rx="3" fill="#334155"/>
+  </g>
+
+  <!-- Workstation 2 (Center) -->
+  <g transform="translate(500, 410)">
+    <rect x="-115" y="-130" width="230" height="145" rx="8" fill="#070C1A" stroke="#38BDF8" stroke-width="2"/>
+    <rect x="-107" y="-122" width="214" height="129" rx="4" fill="#020611"/>
+    <!-- Design Workspace View -->
+    <rect x="-98" y="-115" width="200" height="18" fill="#0F244A"/>
+    <text x="-90" y="-102" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38BDF8">INVITATION GENERATION CANVAS</text>
+    <rect x="-95" y="-85" width="90" height="85" fill="#08142A" stroke="#1E293B"/>
+    <rect x="5" y="-85" width="90" height="85" fill="#08142A" stroke="#1E293B"/>
+    <text x="-50" y="-40" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748B">Source Spec</text>
+    <text x="50" y="-40" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" fill="#4ADE80">Recreated</text>
+    <!-- Stand -->
+    <rect x="-18" y="15" width="36" height="28" fill="#1E293B"/>
+    <rect x="-45" y="38" width="90" height="8" rx="3" fill="#334155"/>
+  </g>
+
+  <!-- Workstation 3 (Right) -->
+  <g transform="translate(820, 420)">
+    <rect x="-100" y="-120" width="200" height="130" rx="8" fill="#070C1A" stroke="#00F0FF" stroke-width="2"/>
+    <rect x="-92" y="-112" width="184" height="114" rx="4" fill="#020611"/>
+    <rect x="-85" y="-105" width="170" height="18" fill="#0B1A3A"/>
+    <text x="-80" y="-92" font-family="'JetBrains Mono', monospace" font-size="8" fill="#00F0FF">VECTOR RECREATION</text>
+    <circle cx="0" cy="-45" r="32" fill="none" stroke="#FDE047" stroke-width="2"/>
+    <polygon points="0,-65 20,-30 -20,-30" fill="#A855F7"/>
+    <!-- Stand -->
+    <rect x="-15" y="10" width="30" height="25" fill="#1E293B"/>
+    <rect x="-40" y="30" width="80" height="8" rx="3" fill="#334155"/>
+  </g>
+
+  <!-- Student Participants Silhouettes Engaged in Challenge -->
+  <!-- Student 1 -->
+  <g transform="translate(180, 520)" fill="#111B34">
+    <ellipse cx="0" cy="-35" rx="22" ry="24"/>
+    <path d="M -45 60 C -45 5, 45 5, 45 60 Z"/>
+  </g>
+  <!-- Student 2 -->
+  <g transform="translate(500, 510)" fill="#111B34">
+    <ellipse cx="0" cy="-40" rx="24" ry="26"/>
+    <path d="M -50 65 C -50 5, 50 5, 50 65 Z"/>
+  </g>
+  <!-- Student 3 -->
+  <g transform="translate(820, 520)" fill="#111B34">
+    <ellipse cx="0" cy="-35" rx="22" ry="24"/>
+    <path d="M -45 60 C -45 5, 45 5, 45 60 Z"/>
+  </g>
+
+  <!-- Floating HUD Label Tag -->
+  <g transform="translate(50, 640)">
+    <rect width="450" height="34" rx="8" fill="#070F22" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="18" y="22" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#00F0FF">
+      LAB SESSION // TRACK 1: INVITATION &amp; LOGO PROMPT ARENA
+    </text>
+  </g>
+</svg>

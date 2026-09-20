@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1250" width="900" height="1250">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070F"/>
+      <stop offset="40%" stop-color="#080E24"/>
+      <stop offset="80%" stop-color="#0B132B"/>
+      <stop offset="100%" stop-color="#04060C"/>
+    </linearGradient>
+
+    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+
+    <linearGradient id="violetNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <linearGradient id="goldPill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FDE047"/>
+    </linearGradient>
+
+    <radialGradient id="centralGlow" cx="50%" cy="36%" r="55%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.32"/>
+      <stop offset="45%" stop-color="#7C3AED" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00F0FF" stroke-opacity="0.07" stroke-width="1"/>
+      <circle cx="40" cy="40" r="1.2" fill="#00F0FF" fill-opacity="0.2"/>
+    </pattern>
+
+    <filter id="neonBloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="900" height="1250" fill="url(#bgGrad)"/>
+  <rect width="900" height="1250" fill="url(#cyberGrid)"/>
+  <circle cx="450" cy="450" r="440" fill="url(#centralGlow)"/>
+
+  <!-- High-Tech Framing Borders -->
+  <rect x="35" y="35" width="830" height="1180" rx="24" fill="none" stroke="#00F0FF" stroke-opacity="0.35" stroke-width="2"/>
+  <rect x="45" y="45" width="810" height="1160" rx="18" fill="none" stroke="#818CF8" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Corner Precision Reticles -->
+  <path d="M 35 75 L 75 35" stroke="#00F0FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 865 75 L 825 35" stroke="#00F0FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 35 1175 L 75 1215" stroke="#00F0FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 865 1175 L 825 1215" stroke="#00F0FF" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- College & Department Header -->
+  <g transform="translate(450, 85)">
+    <text text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="800" fill="#E2E8F0" letter-spacing="4">ST JOSEPH ENGINEERING COLLEGE</text>
+    <text y="22" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#94A3B8" letter-spacing="3">VAMANJOOR, MANGALORE-575028</text>
+    <text y="46" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#38BDF8" letter-spacing="4">DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</text>
+  </g>
+
+  <line x1="120" y1="155" x2="780" y2="155" stroke="#00F0FF" stroke-opacity="0.25" stroke-width="1.5"/>
+
+  <!-- Co-Host Badge Pill -->
+  <g transform="translate(450, 185)">
+    <rect x="-240" y="-18" width="480" height="36" rx="18" fill="#00F0FF" fill-opacity="0.12" stroke="#00F0FF" stroke-width="1.5"/>
+    <text text-anchor="middle" y="5" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#00F0FF" letter-spacing="3">AGENTBLAZER CLUB &amp; CIPHER PRESENT</text>
+  </g>
+
+  <!-- Competition Main Title & Year Tag -->
+  <g transform="translate(450, 290)">
+    <text text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="64" font-weight="900" fill="#FFFFFF" letter-spacing="-1">PROMPT OPS</text>
+    <text y="62" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="52" font-weight="900" fill="url(#cyanNeon)" letter-spacing="3">2K26</text>
+    <text y="102" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="600" fill="#CBD5E1" letter-spacing="3">ANNUAL TECHNICAL COMPETITION</text>
+  </g>
+
+  <!-- Central Visual Emblem: Prompt Engine & Multi-Agent Node -->
+  <g transform="translate(450, 485)">
+    <!-- Outer Pulsing Rings -->
+    <circle r="92" fill="#070D1E" stroke="#00F0FF" stroke-width="2.5" stroke-dasharray="14 6"/>
+    <circle r="76" fill="none" stroke="#A855F7" stroke-width="1.5" stroke-opacity="0.8"/>
+    <circle r="64" fill="#00F0FF" fill-opacity="0.1"/>
+
+    <!-- Central AI Brain / Terminal Spark Icon -->
+    <path d="M -30 -15 C -30 -35, 30 -35, 30 -15 C 30 5, 10 15, 10 28 L -10 28 C -10 15, -30 5, -30 -15 Z" fill="#0F172A" stroke="#00F0FF" stroke-width="3"/>
+    <circle cx="0" cy="38" r="4.5" fill="#FDE047"/>
+    <path d="M -16 -12 L 0 5 L 16 -12" stroke="#FDE047" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Date, Venue & PO Mapping Cards Grid -->
+  <g transform="translate(450, 620)">
+    <!-- Date Card -->
+    <g transform="translate(-250, 0)">
+      <rect x="-115" y="-36" width="230" height="72" rx="14" fill="#080E20" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1.5"/>
+      <text text-anchor="middle" y="-12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#38BDF8" letter-spacing="2">COMPETITION DATE</text>
+      <text text-anchor="middle" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">MARCH 25, 2026</text>
+    </g>
+
+    <!-- Venue Card -->
+    <g transform="translate(0, 0)">
+      <rect x="-115" y="-36" width="230" height="72" rx="14" fill="#080E20" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1.5"/>
+      <text text-anchor="middle" y="-12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#38BDF8" letter-spacing="2">CAMPUS VENUE</text>
+      <text text-anchor="middle" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">CSE ADVANCED LABS</text>
+    </g>
+
+    <!-- PO Accreditation Badge Card -->
+    <g transform="translate(250, 0)">
+      <rect x="-115" y="-36" width="230" height="72" rx="14" fill="#080E20" stroke="#A855F7" stroke-opacity="0.4" stroke-width="1.5"/>
+      <text text-anchor="middle" y="-12" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#C084FC" letter-spacing="2">ACCREDITATION</text>
+      <text text-anchor="middle" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#FDE047">PO4 • PO5 • PO8 • PO11</text>
+    </g>
+  </g>
+
+  <!-- Competition Tracks (Track 1 & Track 2) -->
+  <g transform="translate(450, 785)">
+    <!-- Track 1 Card -->
+    <g transform="translate(-195, 0)">
+      <rect x="-180" y="-80" width="360" height="160" rx="18" fill="#070D1E" stroke="#00F0FF" stroke-width="1.5" stroke-opacity="0.7"/>
+      <rect x="-180" y="-80" width="360" height="34" rx="18" fill="#00F0FF" fill-opacity="0.15"/>
+      <text text-anchor="middle" y="-58" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" fill="#00F0FF" letter-spacing="2">TRACK 1 (1ST YEAR STUDENTS)</text>
+      <text text-anchor="middle" y="-20" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">PROMPT DESIGN &amp; CREATIVITY</text>
+      
+      <text x="-155" y="10" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94A3B8">› Invitation Card Generation</text>
+      <text x="-155" y="32" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94A3B8">› Vector Logo Recreation</text>
+      <text x="-155" y="54" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38BDF8">› High-Fidelity Visual Prompting</text>
+    </g>
+
+    <!-- Track 2 Card -->
+    <g transform="translate(195, 0)">
+      <rect x="-180" y="-80" width="360" height="160" rx="18" fill="#070D1E" stroke="#A855F7" stroke-width="1.5" stroke-opacity="0.7"/>
+      <rect x="-180" y="-80" width="360" height="34" rx="18" fill="#A855F7" fill-opacity="0.15"/>
+      <text text-anchor="middle" y="-58" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" fill="#C084FC" letter-spacing="2">TRACK 2 (2ND YEAR STUDENTS)</text>
+      <text text-anchor="middle" y="-20" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">ADVANCED AI TOOLS &amp; CODE</text>
+      
+      <text x="-155" y="10" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94A3B8">› JSON Schema Auto-Conversion</text>
+      <text x="-155" y="32" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94A3B8">› Python Algorithm Debugging</text>
+      <text x="-155" y="54" font-family="'JetBrains Mono', monospace" font-size="12" fill="#FDE047">› Gemini AI Prompt Security Extraction</text>
+    </g>
+  </g>
+
+  <!-- Prize Pool Banner -->
+  <g transform="translate(450, 935)">
+    <rect x="-380" y="-30" width="760" height="60" rx="16" fill="#081028" stroke="url(#cyanNeon)" stroke-width="2"/>
+    <text text-anchor="middle" y="7" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">
+      AWARDS: <tspan fill="#FDE047">CASH PRIZES</tspan> • CERTIFICATES OF EXCELLENCE • CLUB TROPHIES
+    </text>
+  </g>
+
+  <!-- Faculty Coordinators & Advisory Credits -->
+  <g transform="translate(450, 1025)">
+    <line x1="-380" y1="-20" x2="380" y2="-20" stroke="#334155" stroke-width="1"/>
+    <text text-anchor="middle" y="5" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#38BDF8" letter-spacing="3">COORDINATED UNDER THE GUIDANCE OF</text>
+    
+    <text text-anchor="middle" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700" fill="#E2E8F0">
+      Ms. Nisha J Roche <tspan fill="#64748B">•</tspan> Ms. Jaishma K <tspan fill="#64748B">•</tspan> Dr. Melwyn D’Souza (HOD - CSE)
+    </text>
+    
+    <text text-anchor="middle" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#94A3B8">
+      Student Leadership: Ruben Saldanha (President) • Ajay Dsouza • Stevin Dsouza
+    </text>
+  </g>
+
+  <!-- Bottom Official Stamp -->
+  <g transform="translate(450, 1145)">
+    <text text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#64748B" letter-spacing="4">AGENTBLAZER CLUB • CIPHER • SJEC MANGALORE</text>
+  </g>
+</svg>

@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1130" width="800" height="1130">
+  <defs>
+    <!-- Background Space Gradient -->
+    <linearGradient id="spaceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050714"/>
+      <stop offset="35%" stop-color="#0B1026"/>
+      <stop offset="70%" stop-color="#070A18"/>
+      <stop offset="100%" stop-color="#020308"/>
+    </linearGradient>
+
+    <!-- Neon Accents -->
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#E879F9"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="redSpeakerCircle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="85%" stop-color="#991B1B"/>
+      <stop offset="100%" stop-color="#7F1D1D"/>
+    </radialGradient>
+    <radialGradient id="atomicGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1130" fill="url(#spaceBg)"/>
+
+  <!-- Subtle grid and particles -->
+  <g opacity="0.15">
+    <circle cx="120" cy="180" r="2" fill="#FFFFFF"/>
+    <circle cx="280" cy="240" r="1.5" fill="#C084FC"/>
+    <circle cx="680" cy="190" r="2" fill="#38BDF8"/>
+    <circle cx="720" cy="480" r="1.5" fill="#FFFFFF"/>
+    <circle cx="90" cy="620" r="2" fill="#C084FC"/>
+    <circle cx="710" cy="780" r="2.5" fill="#38BDF8"/>
+  </g>
+
+  <!-- Header Section: SJEC College Banner -->
+  <g transform="translate(40, 24)">
+    <!-- College Crest Shield -->
+    <rect x="0" y="0" width="46" height="52" rx="6" fill="#F59E0B" fill-opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
+    <polygon points="23,8 35,22 23,38 11,22" fill="#F59E0B"/>
+    <text x="23" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="900" fill="#FDE68A" text-anchor="middle">SJEC</text>
+
+    <!-- College Text Details -->
+    <text x="56" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="900" fill="#FFFFFF" letter-spacing="1">ST JOSEPH</text>
+    <text x="56" y="36" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#93C5FD" letter-spacing="1.5">ENGINEERING COLLEGE</text>
+    <text x="56" y="49" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#E2E8F0" letter-spacing="2">MANGALURU</text>
+
+    <rect x="0" y="58" width="220" height="15" rx="3" fill="#1E3A8A"/>
+    <text x="110" y="69" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="800" fill="#93C5FD" text-anchor="middle" letter-spacing="1.5">AN AUTONOMOUS INSTITUTION</text>
+  </g>
+
+  <!-- AgentBlazer Emblem Top-Right -->
+  <g transform="translate(680, 22)">
+    <circle cx="35" cy="35" r="30" fill="#0E172A" stroke="#06B6D4" stroke-width="2"/>
+    <circle cx="35" cy="35" r="24" fill="#020617" stroke="#A855F7" stroke-width="1.5"/>
+    <path d="M35 18 C28 25 24 32 27 42 C30 46 35 48 37 46 C35 42 35 38 38 34 C41 40 43 45 40 48 C48 44 48 32 44 26 C43 30 40 33 39 31 C38 27 38 22 35 18 Z" fill="url(#purpleGlow)"/>
+    <text x="35" y="74" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="800" fill="#38BDF8" text-anchor="middle" letter-spacing="1">AgentBlazer</text>
+    <rect x="18" y="78" width="34" height="10" rx="3" fill="#38BDF8"/>
+    <text x="35" y="86" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="900" fill="#020617" text-anchor="middle">CLUB</text>
+  </g>
+
+  <!-- Organizers Headline -->
+  <text x="400" y="145" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800" fill="#93C5FD" letter-spacing="2">THE DEPT. OF COMPUTER SCIENCE</text>
+  <text x="400" y="174" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800" fill="#93C5FD" letter-spacing="2">&amp; ENGINEERING</text>
+  <text x="400" y="218" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="26" font-weight="900" fill="#FFFFFF" letter-spacing="4">THE AGENTBLAZER CLUB</text>
+  <text x="400" y="246" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" fill="#94A3B8" letter-spacing="2">Presents</text>
+
+  <!-- Atomic Ring Graphic on Right -->
+  <g transform="translate(680, 240)" opacity="0.65">
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#E2E8F0" stroke-width="2" stroke-opacity="0.4"/>
+    <ellipse cx="0" cy="0" rx="75" ry="25" fill="none" stroke="#38BDF8" stroke-width="2" transform="rotate(35)"/>
+    <ellipse cx="0" cy="0" rx="75" ry="25" fill="none" stroke="#C084FC" stroke-width="2" transform="rotate(-35)"/>
+    <circle cx="45" cy="20" r="5" fill="#38BDF8"/>
+    <circle cx="-35" cy="-25" r="4" fill="#E879F9"/>
+  </g>
+
+  <!-- Decorative Sparkles -->
+  <text x="215" y="325" font-size="26" fill="#C084FC">✦</text>
+
+  <!-- Workshop Main Title Banner -->
+  <g transform="translate(140, 275)">
+    <rect x="0" y="0" width="520" height="74" rx="8" fill="#130D29" stroke="#C084FC" stroke-width="1.8"/>
+    <text x="260" y="34" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="900" fill="#F472B6" letter-spacing="3">MASTER THE FUTURE</text>
+    <line x1="20" y1="46" x2="500" y2="46" stroke="#C084FC" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="260" y="62" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#E2E8F0" letter-spacing="1.5">A hands on GSOC &amp; LLMs workshop</text>
+  </g>
+
+  <!-- Speaker Portrait Center Circle -->
+  <g transform="translate(400, 480)">
+    <!-- Red circle backdrop -->
+    <circle cx="0" cy="0" r="135" fill="url(#redSpeakerCircle)" stroke="#000000" stroke-width="8"/>
+    
+    <!-- Stylized Speaker Portrait Silhouette / Illustration -->
+    <!-- Torso Suit -->
+    <path d="M-90 120 C-85 70 -50 45 -25 35 L-10 120 L10 120 L25 35 C50 45 85 70 90 120 Z" fill="#0F172A"/>
+    <!-- White shirt -->
+    <polygon points="-25,35 0,110 25,35 15,20 -15,20" fill="#FFFFFF"/>
+    <!-- Navy Tie -->
+    <polygon points="-8,45 0,115 8,45 5,30 -5,30" fill="#1D4ED8"/>
+    <!-- Collar & Face -->
+    <path d="M-36,5 C-36,-40 36,-40 36,5 C36,35 22,48 0,48 C-22,48 -36,35 -36,5 Z" fill="#FBD38D"/>
+    <!-- Stylized Hair -->
+    <path d="M-42,-15 C-42,-65 -15,-72 5,-70 C25,-68 44,-55 42,-10 C38,-28 20,-48 -2,-48 C-24,-48 -35,-32 -42,-15 Z" fill="#1E293B"/>
+    <!-- Facial Features -->
+    <!-- Eyebrows & Eyes -->
+    <path d="M-22,-8 Q-14,-14 -6,-9" stroke="#334155" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M6,-9 Q14,-14 22,-8" stroke="#334155" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="-14" cy="-4" r="2.5" fill="#0F172A"/>
+    <circle cx="14" cy="-4" r="2.5" fill="#0F172A"/>
+    <!-- Gentle Smile -->
+    <path d="M-10,22 Q0,30 10,22" stroke="#B45309" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Speaker Details -->
+  <text x="400" y="660" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="32" font-weight="900" fill="#FFFFFF" letter-spacing="2">ANAS KHAN</text>
+  <text x="400" y="692" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="700" fill="#38BDF8" letter-spacing="2">SDE@Hackerrank</text>
+
+  <!-- Eligibility Callout -->
+  <text x="400" y="738" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="600" fill="#E2E8F0">First 80 students will shortlisted</text>
+
+  <!-- Event Logistics: Date/Time + Contact + QR Code -->
+  <g transform="translate(100, 770)">
+    <!-- QR Code Block -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="110" height="110" rx="8" fill="#FFFFFF"/>
+      <!-- QR Pattern -->
+      <rect x="10" y="10" width="30" height="30" fill="#000000"/>
+      <rect x="16" y="16" width="18" height="18" fill="#FFFFFF"/>
+      <rect x="20" y="20" width="10" height="10" fill="#000000"/>
+      
+      <rect x="70" y="10" width="30" height="30" fill="#000000"/>
+      <rect x="76" y="16" width="18" height="18" fill="#FFFFFF"/>
+      <rect x="80" y="20" width="10" height="10" fill="#000000"/>
+      
+      <rect x="10" y="70" width="30" height="30" fill="#000000"/>
+      <rect x="16" y="76" width="18" height="18" fill="#FFFFFF"/>
+      <rect x="20" y="80" width="10" height="10" fill="#000000"/>
+      
+      <rect x="48" y="15" width="8" height="18" fill="#000000"/>
+      <rect x="48" y="45" width="22" height="8" fill="#000000"/>
+      <rect x="75" y="52" width="15" height="15" fill="#000000"/>
+      <rect x="52" y="75" width="18" height="18" fill="#000000"/>
+      <rect x="78" y="78" width="20" height="15" fill="#000000"/>
+
+      <!-- Registration Link Pill -->
+      <rect x="-10" y="120" width="130" height="28" rx="14" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="55" y="138" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Registration Link</text>
+    </g>
+
+    <!-- Date & Time Box -->
+    <g transform="translate(180, 15)">
+      <!-- Calendar Icon -->
+      <rect x="0" y="0" width="44" height="44" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+      <rect x="8" y="6" width="28" height="6" fill="#38BDF8"/>
+      <circle cx="12" cy="20" r="2.5" fill="#FFFFFF"/>
+      <circle cx="22" cy="20" r="2.5" fill="#FFFFFF"/>
+      <circle cx="32" cy="20" r="2.5" fill="#FFFFFF"/>
+      <circle cx="12" cy="30" r="2.5" fill="#FFFFFF"/>
+      <circle cx="22" cy="30" r="2.5" fill="#FFFFFF"/>
+      <circle cx="32" cy="30" r="2.5" fill="#FFFFFF"/>
+
+      <text x="56" y="18" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="800" fill="#FFFFFF">14th February</text>
+      <text x="56" y="38" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#94A3B8">2026</text>
+      <text x="56" y="65" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="700" fill="#38BDF8">2pm - 5pm</text>
+    </g>
+
+    <!-- Contact Details -->
+    <g transform="translate(420, 25)">
+      <text x="0" y="18" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#94A3B8">Contact :</text>
+      <text x="0" y="48" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="800" fill="#FFFFFF">agentblazer@sjec.ac.in</text>
+    </g>
+  </g>
+
+  <!-- Bottom Divider Line -->
+  <line x1="0" y1="995" x2="800" y2="995" stroke="#EC4899" stroke-width="2"/>
+
+  <!-- Footer Dignitaries & Coordinators -->
+  <g transform="translate(0, 1020)">
+    <!-- HOD -->
+    <g transform="translate(130, 0)">
+      <text x="0" y="18" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="900" fill="#FFFFFF">Dr. Melwyn DSouza</text>
+      <text x="0" y="42" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#94A3B8">HOD - CSE</text>
+    </g>
+
+    <!-- Faculty Coordinator -->
+    <g transform="translate(400, 0)">
+      <text x="0" y="18" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="900" fill="#FFFFFF">Ms Nisha J Roche</text>
+      <text x="0" y="42" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#94A3B8">Faculty Coordinator</text>
+      <text x="0" y="62" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#A855F7">AgentBlazer Club</text>
+    </g>
+
+    <!-- Student President -->
+    <g transform="translate(670, 0)">
+      <text x="0" y="18" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="900" fill="#FFFFFF">Mr Ruben Saldanha</text>
+      <text x="0" y="42" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#94A3B8">Student president</text>
+      <text x="0" y="62" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#06B6D4">AgentBlazer Club</text>
+    </g>
+  </g>
+</svg>

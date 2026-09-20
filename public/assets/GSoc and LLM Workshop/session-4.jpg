@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="labBg4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+    <linearGradient id="mapCardBg4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.94"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.98"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#labBg4)"/>
+
+  <!-- Ceiling Fans & Lab Infrastructure -->
+  <g transform="translate(540, 60)" opacity="0.75">
+    <circle cx="0" cy="0" r="10" fill="#475569"/>
+    <ellipse cx="-40" cy="-5" rx="50" ry="8" fill="#64748B"/>
+    <ellipse cx="35" cy="-10" rx="50" ry="8" fill="#64748B" transform="rotate(-20)"/>
+    <ellipse cx="5" cy="40" rx="50" ry="8" fill="#64748B" transform="rotate(80)"/>
+  </g>
+
+  <!-- Projector Screen on Right Wall -->
+  <g transform="translate(930, 150)">
+    <rect x="0" y="0" width="320" height="180" rx="4" fill="#FFFFFF" stroke="#0284C7" stroke-width="2"/>
+    <text x="160" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="19" font-weight="900" fill="#0284C7" text-anchor="middle">I'm excited to see what</text>
+    <text x="160" y="100" font-family="'Plus Jakarta Sans', sans-serif" font-size="19" font-weight="900" fill="#0284C7" text-anchor="middle">you build.</text>
+    <text x="160" y="132" font-family="'JetBrains Mono', monospace" font-size="9" fill="#0369A1" text-anchor="middle">Questions? DM me on twitter @anxkhn</text>
+  </g>
+
+  <!-- Speaker & Stage -->
+  <g transform="translate(680, 230)">
+    <circle cx="10" cy="10" r="9" fill="#FBD38D"/>
+    <rect x="0" y="20" width="20" height="38" rx="4" fill="#059669"/>
+    <rect x="3" y="58" width="6" height="30" fill="#1E293B"/>
+    <rect x="11" y="58" width="6" height="30" fill="#1E293B"/>
+  </g>
+
+  <!-- Students in Lab with Raised Hand (Q&A Interactive Moment) -->
+  <g transform="translate(180, 280)">
+    <!-- Student Raising Hand -->
+    <g transform="translate(360, 0)">
+      <circle cx="16" cy="16" r="14" fill="#1E293B"/>
+      <!-- Arm raised in air -->
+      <path d="M28 20 L40 -25 L48 -25 L36 20 Z" fill="#38BDF8"/>
+      <circle cx="44" cy="-28" r="5" fill="#FBD38D"/>
+      <rect x="4" y="30" width="28" height="45" rx="4" fill="#0284C7"/>
+    </g>
+
+    <!-- Other Students in Row -->
+    <g transform="translate(80, 20)">
+      <circle cx="14" cy="14" r="14" fill="#334155"/>
+      <rect x="0" y="28" width="28" height="40" rx="4" fill="#334155"/>
+    </g>
+    <g transform="translate(220, 20)">
+      <circle cx="14" cy="14" r="14" fill="#1E293B"/>
+      <rect x="0" y="28" width="28" height="40" rx="4" fill="#475569"/>
+    </g>
+    <g transform="translate(520, 20)">
+      <circle cx="14" cy="14" r="14" fill="#334155"/>
+      <rect x="0" y="28" width="28" height="40" rx="4" fill="#1E293B"/>
+    </g>
+  </g>
+
+  <!-- Foreground Workstations & Laptops -->
+  <g transform="translate(0, 470)">
+    <rect x="0" y="0" width="1280" height="150" fill="#DC2626" stroke="#991B1B" stroke-width="2"/>
+    <line x1="0" y1="12" x2="1280" y2="12" stroke="#EF4444" stroke-width="2"/>
+
+    <!-- Left Laptop Screen with Python/LLM code -->
+    <g transform="translate(120, -50)">
+      <polygon points="10,120 160,120 180,170 -10,170" fill="#0F172A" stroke="#334155"/>
+      <rect x="0" y="0" width="170" height="120" rx="4" fill="#020617" stroke="#475569"/>
+      <rect x="6" y="6" width="158" height="108" fill="#030712"/>
+      <line x1="16" y1="20" x2="90" y2="20" stroke="#38BDF8" stroke-width="2"/>
+      <line x1="16" y1="30" x2="130" y2="30" stroke="#10B981" stroke-width="2"/>
+      <line x1="28" y1="42" x2="150" y2="42" stroke="#F59E0B" stroke-width="2"/>
+      <line x1="28" y1="54" x2="110" y2="54" stroke="#A855F7" stroke-width="2"/>
+      <line x1="16" y1="66" x2="70" y2="66" stroke="#38BDF8" stroke-width="2"/>
+      <line x1="28" y1="78" x2="140" y2="78" stroke="#94A3B8" stroke-width="2"/>
+    </g>
+
+    <!-- Student Foreground Silhouettes -->
+    <g transform="translate(340, 20)">
+      <circle cx="35" cy="0" r="28" fill="#1E293B"/>
+      <path d="M-10 30 L80 30 L90 190 L-20 190 Z" fill="#0F172A"/>
+    </g>
+
+    <!-- Center-Right Laptop -->
+    <g transform="translate(480, -40)">
+      <polygon points="10,110 150,110 170,160 -10,160" fill="#0F172A" stroke="#334155"/>
+      <rect x="0" y="0" width="160" height="110" rx="4" fill="#020617" stroke="#475569"/>
+      <rect x="6" y="6" width="148" height="98" fill="#030712"/>
+      <line x1="16" y1="18" x2="100" y2="18" stroke="#10B981" stroke-width="2"/>
+      <line x1="16" y1="30" x2="140" y2="30" stroke="#38BDF8" stroke-width="2"/>
+      <line x1="28" y1="42" x2="120" y2="42" stroke="#EC4899" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- GPS Map Camera Card -->
+  <g transform="translate(320, 540)">
+    <rect x="0" y="0" width="640" height="165" rx="14" fill="url(#mapCardBg4)" stroke="#334155" stroke-width="1.5"/>
+    
+    <g transform="translate(480, 12)">
+      <rect x="0" y="0" width="145" height="26" rx="6" fill="#1E293B" stroke="#475569"/>
+      <circle cx="18" cy="13" r="6" fill="#38BDF8"/>
+      <circle cx="18" cy="13" r="3" fill="#F59E0B"/>
+      <text x="32" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">GPS Map Camera</text>
+    </g>
+
+    <g transform="translate(14, 14)">
+      <rect x="0" y="0" width="135" height="135" rx="10" fill="#1E293B" stroke="#475569"/>
+      <rect x="8" y="8" width="119" height="119" fill="#334155" rx="6"/>
+      <rect x="25" y="25" width="40" height="30" fill="#854D0E" rx="2"/>
+      <rect x="70" y="30" width="35" height="40" fill="#78350F" rx="2"/>
+      <rect x="30" y="70" width="70" height="35" fill="#9A3412" rx="2"/>
+      <g transform="translate(60, 50)">
+        <path d="M0 12 L-5 3 C-7 -1 -7 -5 0 -7 C7 -5 7 -1 5 3 Z" fill="#EF4444"/>
+        <circle cx="0" cy="-2" r="2.5" fill="#FFFFFF"/>
+      </g>
+    </g>
+
+    <g transform="translate(165, 20)">
+      <text x="0" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">Mangaluru, Karnataka, India 🇮🇳</text>
+      <text x="0" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Panvel Kochi Kanyakumari Highway, Thiruvail, Mangaluru,</text>
+      <text x="0" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#CBD5E1">Karnataka 575028, India</text>
+      <text x="0" y="85" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#38BDF8">Lat 12.910572, Long 74.899409</text>
+      <text x="0" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Saturday, 14/02/2026 04:48 PM GMT+05:30</text>
+      <text x="0" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#94A3B8">Note : Captured by GPS Map Camera</text>
+    </g>
+  </g>
+</svg>
